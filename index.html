@@ -1,0 +1,117 @@
+<div class="payment-row">
+
+<!-- VISA -->
+<div class="pay-logo visa">VISA</div>
+
+<!-- NFC -->
+<div class="pay-logo nfc">
+  <svg class="nfc-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <rect x="3" y="6.5" width="10.5" height="11" rx="2"/>
+    <path d="M15.8 9.3c1.2 1.2 1.2 4.2 0 5.4" fill="none" stroke-width="2" stroke-linecap="round"/>
+    <path d="M18.3 7.6c2 2 2 7 0 9" fill="none" stroke-width="2" stroke-linecap="round"/>
+    <path d="M20.6 6c3 3 3 10.9 0 13.9" fill="none" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+  <span>NFC</span>
+</div>
+
+<!-- MASTERCARD -->
+<div class="pay-logo mc">
+  <svg viewBox="0 0 48 30" aria-hidden="true">
+    <circle cx="18" cy="15" r="12" fill="#EB001B"/>
+    <circle cx="30" cy="15" r="12" fill="#F79E1B"/>
+    <circle cx="24" cy="15" r="12" fill="#FF5F00"/>
+  </svg>
+</div>
+
+<!-- MOBILEPAY -->
+<div class="pay-logo mobilepay">MobilePay</div>
+
+<!-- KLARNA -->
+<div class="pay-logo klarna">Klarna</div>
+
+<!-- APPLE PAY -->
+<div class="pay-logo applepay">
+  <svg class="apple-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M16.7 13.2c0-2 1.7-2.9 1.8-3-1-1.5-2.6-1.7-3.2-1.7-1.3-.1-2.5.8-3.2.8-.7 0-1.7-.8-2.9-.8-1.5 0-2.9.9-3.6 2.2-1.6 2.7-.4 6.7 1.1 8.9.7 1.1 1.6 2.3 2.8 2.3 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-.9 2.7-2 .8-1.2 1.1-2.4 1.1-2.5-.1 0-2.4-.9-2.4-3.5zM14.9 6.7c.6-.8 1-1.8.9-2.9-.9.1-2 .6-2.6 1.4-.6.7-1 1.8-.9 2.8 1 .1 2-.5 2.6-1.3z"/>
+  </svg>
+  <span>Pay</span>
+</div>
+
+</div>
+
+<style>
+.payment-row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  margin:30px 0;
+}
+
+.pay-logo{
+  height:34px;
+  min-width:60px;
+  padding:0 12px;
+  border-radius:6px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:700;
+  background:#f2f2f2;
+  color:#000;
+  box-shadow:0 4px 10px rgba(0,0,0,.18);
+  transition:.25s;
+}
+
+.pay-logo:hover{
+  transform:scale(1.08);
+  box-shadow:0 6px 16px rgba(0,0,0,.3);
+}
+
+/* VISA */
+.visa{
+  color:#1A1F71;
+  font-style:italic;
+  letter-spacing:1px;
+}
+
+/* Mastercard */
+.mc svg{height:26px}
+
+/* MobilePay */
+.mobilepay{
+  background:#5A78FF;
+  color:#fff;
+}
+
+/* Klarna */
+.klarna{
+  background:#FFB3C7;
+}
+
+/* Apple Pay */
+.applepay{
+  background:#111;
+  color:#fff;
+}
+.apple-icon{
+  width:18px;
+  height:18px;
+  fill:#fff;
+}
+
+/* NFC */
+.nfc{
+  background:#111;
+  color:#fff;
+}
+.nfc-icon{
+  width:22px;
+  height:22px;
+}
+.nfc-icon rect{fill:#fff}
+.nfc-icon path{stroke:#fff}
+</style>
